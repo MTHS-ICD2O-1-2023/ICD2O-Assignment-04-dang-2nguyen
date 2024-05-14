@@ -8,7 +8,7 @@ function checking() {
   const size =document.getElementById("size").value
   const large = document.getElementById("large").value
   const extraLarge =document.getElementById("extraLarge").value
-  let peperoni = document.getElementById("peperoni").checked
+  let peperoni = document.getElementById("peperoni")
   let cheese = document.getElementById("cheese")
   let mushroom = document.getElementById("mushroom")
   let olivers = document.getElementById("olivers")
@@ -23,13 +23,13 @@ function checking() {
     document.getElementById("topping1").innerHTML = "Cheese is $1.50"
   }
   else if(peperoni.checked) {
-    document.getElementById("topping2").innerHTML = "Peperoni is $1.75"
+    document.getElementById("topping1").innerHTML = "Peperoni is $1.75"
   }
   else if(mushroom.checked) {
-    document.getElementById("topping3").innerHTML = "Mushroom is $2.75"
+    document.getElementById("topping1").innerHTML = "Mushroom is $2.75"
   }
   else if(olivers.checked) {
-    document.getElementById("topping4").innerHTML = "Olivers is $0.75"
+    document.getElementById("topping1").innerHTML = "Olivers is $0.75"
   }
   else {
     document.getElementById("pizzaPrice").innerHTML = "You should design your pizza to continue"
